@@ -109,7 +109,7 @@ Tab:AddButton(
     {
         Name = "Disable 3D Render",
         Callback = function()
-            game:GetService("RunService"):Set3dRenderingEnabled(false)
+            loadstring(game:HttpGet(("https://raw.githubusercontent.com/NekoCute/Roblocc-optimize/main/main")))()
         end
     }
 )
