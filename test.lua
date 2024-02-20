@@ -2,7 +2,7 @@ getgenv().Config = {}
 
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/shlexware/Orion/main/source")))()
 local Window =
-    OrionLib:MakeWindow({Name = "Cụt Tay Vip Pro 69", HidePremium = false, SaveConfig = true, ConfigFolder = "DitMePrestonHub"})
+    OrionLib:MakeWindow({Name = "DmPrestonHub Beta v0.1 :trolley:", HidePremium = false, SaveConfig = true, ConfigFolder = "DitMePrestonHub"})
 
 local Tab =
     Window:MakeTab(
@@ -96,16 +96,6 @@ Tab:AddTextbox(
         end
     }
 )
-
-Tab:AddButton(
-    {
-        Name = "AntiAFK Jump",
-        Callback = function()
-            antiAFK()
-        end
-    }
-)
-
 Tab:AddButton(
     {
         Name = "AntiAFK Normal",
@@ -129,6 +119,14 @@ Tab:AddButton(
         Name = "Enable 3D Render",
         Callback = function()
             game:GetService("RunService"):Set3dRenderingEnabled(true)
+        end
+    }
+)
+Tab:AddButton(
+    {
+        Name = "AntiStaff (Beta or Broken idk)",
+        Callback = function()
+            loadstring(game:HttpGet(("https://raw.githubusercontent.com/NekoCute/Ditmepreston/main/anti-staff-69.lua")))()
         end
     }
 )
