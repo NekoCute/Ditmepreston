@@ -98,7 +98,7 @@ Tab:AddTextbox(
 )
 Tab:AddButton(
     {
-        Name = "AntiAFK Normal",
+        Name = "AntiAFK",
         Callback = function()
             antiAFKN()
         end
@@ -107,18 +107,9 @@ Tab:AddButton(
 
 Tab:AddButton(
     {
-        Name = "Disable 3D Render",
+        Name = "Reduce Lag",
         Callback = function()
             loadstring(game:HttpGet(("https://raw.githubusercontent.com/NekoCute/Roblocc-optimize/main/main")))()
-        end
-    }
-)
-
-Tab:AddButton(
-    {
-        Name = "Enable 3D Render",
-        Callback = function()
-            game:GetService("RunService"):Set3dRenderingEnabled(true)
         end
     }
 )
